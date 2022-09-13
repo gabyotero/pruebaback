@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "1e9963de-eb55-4446-8d6d-417feec5fbb3",
+		"name": "Products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GETProducts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"laptop2\",\r\n    \"category\": \"laptops\",\r\n    \"price\": 1586,\r\n    \"imgURL\": \"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.itpro.co.uk%2Fimage%2Fupload%2Fv1570815413%2Fitpro%2F2015%2F09%2Ftoshiba-satellite-radius-12.jpg&f=1&nofb=1\"\r\n\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/Products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POSTProducts",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"laptop3\",\r\n    \"category\": \"laptops\",\r\n    \"price\": 1586,\r\n    \"imgURL\": \"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.itpro.co.uk%2Fimage%2Fupload%2Fv1570815413%2Fitpro%2F2015%2F09%2Ftoshiba-satellite-radius-12.jpg&f=1&nofb=1\"\r\n\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/Products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Products"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
